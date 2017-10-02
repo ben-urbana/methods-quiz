@@ -43,4 +43,15 @@ describe 'methods_quiz' do
 		end
 	end
 
+	describe 'two_as_one?' do
+		it 'should determine if two of the numbers can be added up to equal the other' do
+			two_as_one?(1,2,3).must_equal(true)
+		end
+
+		it 'should return false if none of the numbers can be added to equal the other' do
+			two_as_one?(1,7,2).must_equal(false)
+		end
+	end
+
+
 end
