@@ -33,4 +33,14 @@ describe 'methods_quiz' do
 		end
 	end
 
+	describe 'closer_to' do
+		it 'should return whichever guess is closer to the target number' do
+			closer_to(5,6,3).must_equal(6)
+		end
+
+		it 'should return 0 if both guesses are equal distance' do
+			closer_to(5,7,3).must_equal(0)
+		end
+	end
+
 end
