@@ -23,4 +23,14 @@ describe 'methods_quiz' do
 		end
 	end
 
+	describe 'icy_hot?' do
+		it 'should return true if one temperature is icy and the other is hot' do
+			icy_hot?((-1),101).must_equal(true)
+		end
+
+		it 'should return false if neither temperature is icy nor hot' do
+			icy_hot?(1,99).must_equal(false)
+		end
+	end
+
 end
