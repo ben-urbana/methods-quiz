@@ -37,4 +37,14 @@ def closer_to (target,a,b)
 	end
 end
 
-			
+def two_as_one? (a,b,c)
+	if a + b == c
+		return true
+	elsif a + c == b
+		return true
+	elsif b + c == a
+		return true
+	else
+		return false
+	end
+end
