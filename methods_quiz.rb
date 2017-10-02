@@ -5,3 +5,11 @@ def has_teen? (a,b,c)
 		return false
 	end
 end
+
+def not_string (string)
+	if string[0..2] == 'not'
+		return string
+	else
+		return 'not' + string
+	end
+end
