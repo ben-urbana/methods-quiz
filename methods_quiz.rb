@@ -23,3 +23,18 @@ def icy_hot? (a,b)
 		return false
 	end
 end
+
+def closer_to (target,a,b)
+	d1 = (target - a).abs
+	d2 = (target - b).abs
+
+	if d1 > d2
+		return b
+	elsif d2 > d1
+		return a
+	else
+		return 0
+	end
+end
+
+			
